@@ -3,266 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Martin AI - AI-Konsulent & AI Chatbot Specialist</title>
-    <meta name="description" content="Martin AI er din AI-Konsulent og specialist i AI chatbots. Vi hjælper danske virksomheder med at optimere kundeservice, lead-generering og automatisering af processer.">
-    <meta name="keywords" content="AI chatbots, AI konsulent, automatisering, kundeservice, lead-generering, danske virksomheder">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="MartinAI - AI-drevne løsninger til danske virksomheder">
+    <title>MartinAI - AI til Virksomheder</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Header */
+        header {
+            background-color: #003087;
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #e6f0ff;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #003087;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        .cta-btn {
+            background-color: #003087;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .cta-btn:hover {
+            background-color: #0044cc;
+        }
+
+        /* Features Section */
+        .features {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .feature-card h3 {
+            color: #003087;
+            margin-bottom: 1rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #003087;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 1rem;
+        }
+
+        .contact a {
+            color: #e6f0ff;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f1f1f1;
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div class="container header-container">
-            <a href="#hjem" class="logo">
-                <img src="https://i.imgur.com/7BLohYj.png" alt="Martin AI Logo">
-            </a>
-            <nav>
-			<ul>
-        <li><a href="#hjem">Hjem</a></li>
-        <li><a href="#om">Om</a></li>
-        <li><a href="#tjenester">Tjenester</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#faq">FAQ</a></li> <!-- Add this line -->
-        <li><a href="#kontakt">Kontakt</a></li>
-			</ul>
-			</nav>
-        </div>
+        <nav>
+            <div class="logo">MartinAI</div>
+            <ul class="nav-links">
+                <li><a href="#features">Funktioner</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="hjem" class="hero">
-        <div class="container hero-container">
-            <h1>Revolutionér din virksomhed med AI Chatbots</h1>
-            <p>Vi hjælper virksomheder med at udnytte AI til kundeservice, lead-generering og optimering af arbejdsprocesser.</p>
-            <button class="cta-button" onclick="window.voiceflow.chat.open()">Bliv ringet op</button>
+    <section class="hero">
+        <h1>Optimer Din Virksomhed med AI</h1>
+        <p>Skaler din kundeservice og automatisér processer med intelligente AI-løsninger designet til danske virksomheder.</p>
+        <a href="#contact" class="cta-btn">Kom i gang nu</a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="feature-card">
+            <h3>24/7 Kundesupport</h3>
+            <p>Vores AI-løsninger håndterer kundehenvendelser døgnet rundt, så du kan fokusere på din kerneforretning.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Skalerbar Løsning</h3>
+            <p>Tilpasset til både mellemstore og store virksomheder med fleksible integrationsmuligheder.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Data-drevet Indsigt</h3>
+            <p>Få værdifuld indsigt i kundeadfærd og optimer din strategi med avanceret analyse.</p>
         </div>
     </section>
 
-    <!-- Om Section -->
-    <section id="om" class="about">
-        <div class="container">
-            <h2>Om Martin AI</h2>
-            <p>Mit navn er Martin Terp, og jeg er AI-Konsulent & AI Chatbot Specialist. Som ejer og stifter af Martin AI har jeg specialiseret mig i at udvikle og implementere AI-drevne chatbots, der skaber værdi for danske virksomheder. Med passion for AI og en baggrund i salg og kundeservice hjælper jeg virksomheder med at automatisere kundeservice, generere leads og optimere interne processer.</p>
-        </div>
-    </section>
-
-    <!-- Tjenester Section -->
-    <section id="tjenester" class="services">
-        <div class="container">
-            <h2>Vores AI Chatbot Løsninger</h2>
-            <p>Vi tilbyder skræddersyede AI chatbot løsninger, der giver din virksomhed en konkurrencefordel. Vores løsninger kan:</p>
-            <ul>
-                <li>Automatisere kundeservice og reducere driftsomkostninger</li>
-                <li>Generere leads og øge konverteringsraten</li>
-                <li>Forbedre kundeoplevelsen med hurtige og nøjagtige svar</li>
-                <li>Integrere med platforme som WhatsApp, Slack, Webchat, SMS og meget mere</li>
-            </ul>
-        </div>
-    </section>
-
-	<!-- Blog Section -->
-	<section id="blog" class="blog">
-    <div class="container">
-        <h2>Blog</h2>
-
-        <!-- Blog Post 1 -->
-        <article id="blog-post-1">
-            <h3>Hvordan AI Chatbots kan revolutionere din kundeservice</h3>
-            <p>AI chatbots kan automatisere kundeservice, reducere omkostninger og forbedre kundetilfredshed. Læs mere om, hvordan din virksomhed kan drage fordel af denne teknologi.</p>
-            <a href="#blog-post-1">Læs mere</a>
-            <div class="blog-content" style="display: none;">
-                <p>AI chatbots er en revolution inden for kundeservice. De kan håndtere store mængder af henvendelser 24/7 uden behov for menneskelig intervention. Dette reducerer ikke kun omkostningerne, men forbedrer også kundetilfredsheden ved at give hurtige og præcise svar.</p>
-                <p>Eksempler på virksomheder, der bruger AI chatbots, inkluderer Amazon og Sephora. Disse virksomheder har set en markant forbedring i deres kundeservice og en reduktion i driftsomkostninger.</p>
-            </div>
-        </article>
-
-        <!-- Blog Post 2 -->
-        <article id="blog-post-2">
-            <h3>Top 5 fordele ved at implementere AI i din virksomhed</h3>
-            <p>AI kan automatisere opgaver, forbedre beslutningstagning og give din virksomhed en konkurrencefordel. Udforsk de største fordele her.</p>
-            <a href="#blog-post-2">Læs mere</a>
-            <div class="blog-content" style="display: none;">
-                <p>1. Automatisering af repetitive opgaver: AI kan håndtere rutineopgaver, så medarbejderne kan fokusere på mere værdifulde opgaver.</p>
-                <p>2. Forbedret kundeoplevelse: AI chatbots kan levere hurtige og præcise svar til kunderne.</p>
-                <p>3. Reducerede omkostninger: Automatisering reducerer behovet for manuel arbejdskraft.</p>
-                <p>4. Data-driven beslutningstagning: AI kan analysere store mængder data for at give indsigt og forbedre beslutninger.</p>
-                <p>5. Konkurrencefordel: Virksomheder, der implementerer AI, er bedre positioneret til at konkurrere på markedet.</p>
-            </div>
-        </article>
-
-        <!-- Blog Post 3 -->
-	<article id="blog-post-3">
-    <h3>Hvordan store virksomheder bruger AI til at vinde konkurrencen</h3>
-    <p>Store virksomheder som Amazon og Nike bruger AI til at forbedre kundeservice og skabe nye indtjeningsmuligheder. Lær, hvordan din virksomhed kan følge trop.</p>
-    <a href="#blog-post-3">Læs mere</a>
-    <div class="blog-content" style="display: none;">
-        <p>Store virksomheder som Amazon bruger AI chatbots til at automatisere kundeservice og returneringsprocesser. Nike bruger AI til at give personaliserede produktanbefalinger, hvilket forbedrer kundeoplevelsen og øger salget.</p>
-        <p>Bank of America har implementeret en AI-drevet assistent kaldet "Erica," der hjælper kunder med banktransaktioner. Sephora bruger chatbots til at give personaliserede skønhedsråd og produktanbefalinger.</p>
-
-        <h4>Hvordan kan din virksomhed følge trop?</h4>
-        <p>Selvom din virksomhed måske ikke har samme budget eller arbejdskraft som disse giganter, kan du stadig konkurrere ved at implementere AI på en strategisk og omkostningseffektiv måde. Her er nogle tips:</p>
-        <ul>
-            <li><strong>Start småt:</strong> Du behøver ikke implementere AI i hele din virksomhed på én gang. Start med en enkel chatbot til kundeservice eller lead-generering, og udvid gradvist.</li>
-            <li><strong>Fokusér på kerneområder:</strong> Identificer de områder, hvor AI kan have den største indvirkning, f.eks. kundeservice, salg eller marketing. Fokusér på at forbedre disse områder først.</li>
-            <li><strong>Lær af data:</strong> AI er stærk, fordi den kan analysere store mængder data. Brug dine eksisterende data til at træne AI-modeller, der kan forudsige kundeadfærd eller optimere processer.</li>
-            <li><strong>Samarbejd med eksperter:</strong> Hvis du ikke har internt AI-knowhow, kan du samarbejde med konsulenter eller virksomheder, der specialiserer sig i AI-implementering. Dette kan spare dig for tid og fejl.</li>
-            <li><strong>Vær fleksibel og lærerig:</strong> AI-teknologi udvikler sig hurtigt. Vær parat til at tilpasse dig nye trends og lær af de resultater, du opnår.</li>
-        </ul>
-        <p>Ved at tage disse skridt kan din virksomhed konkurrere med de store spillere på markedet, selv med begrænsede ressourcer. AI er ikke længere en luksus, der kun er forbeholdt store virksomheder – det er en nødvendighed for alle, der ønsker at overleve og trives i den digitale tidsalder.</p>
-    </div>
-	</article>
-    </div>
-	</section>
-	
-	<!-- FAQ Section -->
-	<section id="faq" class="faq">
-    <div class="container">
-        <h2>Ofte Stillede Spørgsmål (FAQ)</h2>
-		
-
-        <!-- FAQ Item 1 -->
-        <div class="faq-item">
-            <h3>Hvad er en AI chatbot, og hvordan fungerer den?</h3>
-            <div class="faq-answer">
-                <p>En AI chatbot er en softwareapplikation, der bruger kunstig intelligens (AI) til at simulere menneskelig samtale. Den kan forstå og besvare brugerens spørgsmål ved hjælp af naturlig sprogbehandling (NLP) og maskinlæring. Dette gør det muligt at automatisere kundeservice, lead-generering og andre opgaver.</p>
-            </div>
-        </div>
-
-        <!-- FAQ Item 2 -->
-        <div class="faq-item">
-            <h3>Hvordan adskiller AI chatbots sig fra traditionelle chatbots?</h3>
-            <div class="faq-answer">
-                <p>Traditionelle chatbots er ofte baseret på foruddefinerede scripts og kan kun håndtere specifikke spørgsmål. AI chatbots derimod bruger avanceret teknologi som maskinlæring og NLP til at forstå og lære af brugerens input. Dette gør dem i stand til at håndtere komplekse spørgsmål og tilpasse sig brugerens behov.</p>
-            </div>
-        </div>
-
-        <!-- FAQ Item 3 -->
-        <div class="faq-item">
-            <h3>Hvilke fordele har AI chatbots for min virksomhed?</h3>
-            <div class="faq-answer">
-                <p>AI chatbots kan:</p>
-                <ul>
-                    <li>Automatisere kundeservice og reducere driftsomkostninger.</li>
-                    <li>Forbedre kundeoplevelsen med hurtige og præcise svar.</li>
-                    <li>Generere leads og øge konverteringsraten.</li>
-                    <li>Integrere med platforme som WhatsApp, Slack og SMS for en fleksibel løsning.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- FAQ Item 4 -->
-        <div class="faq-item">
-            <h3>Hvilke brancher kan drage fordel af AI chatbots?</h3>
-            <div class="faq-answer">
-                <p>AI chatbots kan bruges i næsten alle brancher, men de er særlig nyttige i:</p>
-                <ul>
-                    <li>Kundeservice (f.eks. e-handel, telekommunikation).</li>
-                    <li>Finans (f.eks. banktransaktioner, forsikring).</li>
-                    <li>Sundhed (f.eks. booking af tider, patientunderstøttelse).</li>
-                    <li>Ejendom (f.eks. booking af fremvisninger, FAQ om boliger).</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- FAQ Item 5 -->
-        <div class="faq-item">
-            <h3>Hvordan starter jeg med at implementere en AI chatbot i min virksomhed?</h3>
-            <div class="faq-answer">
-                <p>Implementering af en AI chatbot kan gøres i få trin:</p>
-                <ol>
-                    <li>Identificer de områder, hvor en chatbot kan skabe mest værdi (f.eks. kundeservice eller salg).</li>
-                    <li>Vælg en AI chatbot-platform, der passer til dine behov.</li>
-                    <li>Træn chatbotten med relevante data og scripts.</li>
-                    <li>Test chatbotten og juster den baseret på feedback.</li>
-                    <li>Lancer chatbotten og overvåg dens ydeevne løbende.</li>
-                </ol>
-                <p>Vi tilbyder også fuld support under hele processen for at sikre en problemfri implementering.</p>
-            </div>
-        </div>
-
-        <!-- FAQ Item 6 -->
-        <div class="faq-item">
-            <h3>Hvad koster det at implementere en AI chatbot?</h3>
-            <div class="faq-answer">
-                <p>Prisen afhænger af flere faktorer, herunder kompleksiteten af chatbotten, integrationsbehov og løbende vedligeholdelse. Vi tilbyder skræddersyede løsninger, der passer til din virksomheds budget og mål. Kontakt os for en gratis konsultation og et tilbud.</p>
-            </div>
-        </div>
-
-        <!-- FAQ Item 7 -->
-        <div class="faq-item">
-            <h3>Kan AI chatbots erstatte menneskelig kundeservice?</h3>
-            <div class="faq-answer">
-                <p>AI chatbots er designet til at supplere, ikke erstatte, menneskelig kundeservice. De kan håndtere rutineopgaver og hyppige spørgsmål, hvilket frigør tid for dine medarbejdere til at fokusere på mere komplekse opgaver. I sidste ende skaber det en bedre balance mellem automatisering og personlig service.</p>
-            </div>
-        </div>
-    </div>
-	</section>
-
-    <!-- Kontakt Section -->
-    <section id="kontakt" class="contact">
-        <div class="container">
-            <h2>Kontakt</h2>
-            <div class="contact-info">
-                <p><strong>Martin Terp</strong></p>
-                <p>AI-Konsulent & AI Chatbot Specialist</p>
-                <p>Telefon: <a href="tel:81717018">81717018</a></p>
-                <p>Email: <a href="mailto:martin.ai@outlook.dk">martin.ai@outlook.dk</a></p>
-            </div>
-            <p class="contact-message"><strong>Brug chatten til at booke et møde eller efterlad dine kontaktoplysninger, og jeg vil kontakte dig.</strong></p>
-        </div>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Kontakt Os</h2>
+        <p>Er du klar til at tage din virksomhed til næste niveau? Kontakt os i dag!</p>
+        <p>Email: <a href="mailto:info@martinai.dk">info@martinai.dk</a> | Telefon: +45 12 34 56 78</p>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>© 2025 Martin AI. Alle rettigheder forbeholdes.</p>
-        </div>
+        <p>© 2025 MartinAI. Alle rettigheder forbeholdes.</p>
     </footer>
-
-    <!-- Chatbot Script -->
-    <script type="text/javascript">
-        (function(d, t) {
-            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-            v.onload = function() {
-                window.voiceflow.chat.load({
-                    verify: { projectID: '67a026d82c74bdb8fabe5ae4' },
-                    url: 'https://general-runtime.voiceflow.com',
-                    versionID: 'production'
-                });
-            }
-            v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-        })(document, 'script');
-    </script>
-	
-	<script>
-    // Add event listeners to "Læs mere" links
-    document.querySelectorAll('.blog article a').forEach(link => {
-        link.addEventListener('click', function (e) {
-            e.preventDefault(); // Prevent default link behavior
-            const content = this.parentElement.querySelector('.blog-content');
-            content.style.display = content.style.display === 'block' ? 'none' : 'block';
-        });
-    });
-	</script>
-	
-<script>
-    // Add event listeners to FAQ questions
-    document.querySelectorAll('.faq-item h3').forEach(question => {
-        question.addEventListener('click', function () {
-            const faqItem = this.parentElement;
-            const answer = this.nextElementSibling;
-
-            // Toggle the active class on the FAQ item
-            faqItem.classList.toggle('active');
-
-            // Toggle the display of the answer
-            if (faqItem.classList.contains('active')) {
-                answer.style.display = 'block';
-            } else {
-                answer.style.display = 'none';
-            }
-        });
-    });
-</script>
-
 </body>
 </html>
